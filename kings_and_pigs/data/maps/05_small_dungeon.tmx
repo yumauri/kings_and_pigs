@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="14" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="10">
+ <tileset firstgid="1" source="outdoor.tsx"/>
+ <tileset firstgid="181" source="terrain.tsx"/>
+ <layer id="1" name="background" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJyLYWBgiKEQ3yWAB5M+BjL0wTAuQGn4gTAASWgwVA==
+  </data>
+ </layer>
+ <layer id="2" name="walls" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAc+ABxHg7si0dfLB65aBroiwNiLyD2JlEfun5kHE+EPmIAAHjOB9E=
+  </data>
+ </layer>
+ <layer id="3" name="floors" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg5IA6IvYDYm0L9yDieOk5jAAAtewLZ
+  </data>
+ </layer>
+ <layer id="4" name="decorations" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBiZoAiIAwbaEUgAAG1oAMM=
+  </data>
+ </layer>
+ <objectgroup id="5" name="spawn">
+  <object id="1" name="spawn" x="246.697" y="111.707" width="78" height="58"/>
+ </objectgroup>
+ <objectgroup id="6" name="boxes">
+  <object id="3" x="130.319" y="111.683" width="22" height="16"/>
+  <object id="4" x="154.79" y="111.683" width="22" height="16"/>
+  <object id="5" x="130.319" y="93.9421" width="22" height="16"/>
+  <object id="6" x="154.79" y="93.9421" width="22" height="16"/>
+  <object id="7" x="130.319" y="75.8126" width="22" height="16"/>
+  <object id="8" x="154.79" y="75.8126" width="22" height="16"/>
+ </objectgroup>
+ <objectgroup id="7" name="bombs"/>
+ <objectgroup id="8" name="doors">
+  <object id="2" type="04_secret_dungeon" x="260" y="104" width="46" height="56"/>
+ </objectgroup>
+ <objectgroup id="10" name="invisible_doors"/>
+ <objectgroup id="9" name="enemies">
+  <object id="9" type="pig facing right" x="212.896" y="127.248">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

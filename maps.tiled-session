@@ -1,0 +1,315 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+        "kings_and_pigs/data/maps"
+    ],
+    "fileStates": {
+        "kings_and_pigs/data/maps/!!!.tmx": {
+            "scale": 1.302,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 221.19815668202764,
+                "y": 211.98156682027653
+            }
+        },
+        "kings_and_pigs/data/maps/!!!_go_down.tmx": {
+            "scale": 1.2571,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 190.91559939543396,
+                "y": 329.3294089571235
+            }
+        },
+        "kings_and_pigs/data/maps/!!_hall.tmx": {
+            "scale": 1.2167,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 330.40190679707405,
+                "y": 227.66499547957594
+            }
+        },
+        "kings_and_pigs/data/maps/00_intro.tmx": {
+            "scale": 1.9553,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 210.45363882780134,
+                "y": 109.44612079987725
+            }
+        },
+        "kings_and_pigs/data/maps/01_hall.tmx": {
+            "scale": 1.12,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 309.375,
+                "y": 314.2857142857143
+            }
+        },
+        "kings_and_pigs/data/maps/01_intro_chamber.tmx": {
+            "scale": 1.609,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 244.25108763206964,
+                "y": 236.79303915475452
+            }
+        },
+        "kings_and_pigs/data/maps/02_go_down.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 225,
+                "y": 336
+            }
+        },
+        "kings_and_pigs/data/maps/02_test.tmx": {
+            "scale": 0.8588900862068964,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 448.8350793551221,
+                "y": 224.70861301047614
+            }
+        },
+        "kings_and_pigs/data/maps/03_dungeon.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 825,
+                "y": 162
+            }
+        },
+        "kings_and_pigs/data/maps/04_secret_dungeon.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 455,
+                "y": 40
+            }
+        },
+        "kings_and_pigs/data/maps/05_small_dungeon.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 225,
+                "y": 114
+            }
+        },
+        "kings_and_pigs/data/maps/06_go_up.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 231,
+                "y": 234
+            }
+        },
+        "kings_and_pigs/data/maps/07_go_upper.tmx": {
+            "scale": 1.2933,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 234.67099667517203,
+                "y": 201.0361091780716
+            }
+        },
+        "kings_and_pigs/data/maps/08_fall.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 10,
+            "viewCenter": {
+                "x": 225,
+                "y": 332
+            }
+        },
+        "kings_and_pigs/data/maps/09_secret_pass.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 233,
+                "y": 118
+            }
+        },
+        "kings_and_pigs/data/maps/10_secret_underpass.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 249,
+                "y": 130
+            }
+        },
+        "kings_and_pigs/data/maps/11_secret_pass_2.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 229,
+                "y": 112
+            }
+        },
+        "kings_and_pigs/data/maps/12_secret_underpass_2.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 249,
+                "y": 122
+            }
+        },
+        "kings_and_pigs/data/maps/13_climb.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 223,
+                "y": 446
+            }
+        },
+        "kings_and_pigs/data/maps/14_armory.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 225,
+                "y": 112
+            }
+        },
+        "kings_and_pigs/data/maps/15_climb_upper.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 191,
+                "y": 200
+            }
+        },
+        "kings_and_pigs/data/maps/16_respect.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 9,
+            "viewCenter": {
+                "x": 209,
+                "y": 112
+            }
+        },
+        "kings_and_pigs/data/maps/17_dinner_room.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 345,
+                "y": 102
+            }
+        },
+        "kings_and_pigs/data/maps/18_stairs.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 221,
+                "y": 132
+            }
+        },
+        "kings_and_pigs/data/maps/19_dance_hall.tmx": {
+            "scale": 0.9209,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 476.16462156585953,
+                "y": 167.2277120208492
+            }
+        },
+        "kings_and_pigs/data/maps/20_garden.tmx": {
+            "scale": 1.5322,
+            "selectedLayer": 12,
+            "viewCenter": {
+                "x": 781.5559326458688,
+                "y": 122.69938650306747
+            }
+        },
+        "kings_and_pigs/data/maps/21_barracks.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 362,
+                "y": 126
+            }
+        },
+        "kings_and_pigs/data/maps/22_wall.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 246,
+                "y": 110
+            }
+        },
+        "kings_and_pigs/data/maps/23_bedroom.tmx": {
+            "scale": 1.1613,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 223.0259192284509,
+                "y": 158.44312408507707
+            }
+        },
+        "kings_and_pigs/data/maps/24_attic.tmx": {
+            "scale": 1.5662,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 258.58766441067553,
+                "y": 141.7443493806666
+            }
+        },
+        "kings_and_pigs/data/maps/25_roof.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 224,
+                "y": 112
+            }
+        },
+        "kings_and_pigs/data/maps/99_dead_end.tmx": {
+            "scale": 1.6882291666666667,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 225.68026161535136,
+                "y": 197.8404393163448
+            }
+        },
+        "kings_and_pigs/data/maps/decorations.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "kings_and_pigs/data/maps/outdoor.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "kings_and_pigs/data/maps/terrain.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "kings_and_pigs/data/maps/xx_template.tmx": {
+            "scale": 1.7614583333333333,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 208.35008870490836,
+                "y": 112.40685984624483
+            }
+        }
+    },
+    "last.externalTilesetPath": "/Users/vic/Dev/ya.liceum/projects/2 - PyGame - Kings and Pigs/kings_and_pigs/data/maps",
+    "last.imagePath": "/Users/vic/Dev/ya.liceum/projects/2 - PyGame - Kings and Pigs/kings_and_pigs/data/sprites/14-TileSets",
+    "map.height": 7,
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.width": 14,
+    "openFiles": [
+    ],
+    "project": "maps.tiled-project",
+    "recentFiles": [
+        "kings_and_pigs/data/maps/decorations.tsx",
+        "kings_and_pigs/data/maps/outdoor.tsx",
+        "kings_and_pigs/data/maps/terrain.tsx",
+        "kings_and_pigs/data/maps/24_attic.tmx",
+        "kings_and_pigs/data/maps/21_barracks.tmx",
+        "kings_and_pigs/data/maps/22_wall.tmx",
+        "kings_and_pigs/data/maps/23_bedroom.tmx",
+        "kings_and_pigs/data/maps/25_roof.tmx",
+        "kings_and_pigs/data/maps/99_dead_end.tmx",
+        "kings_and_pigs/data/maps/02_go_down.tmx",
+        "kings_and_pigs/data/maps/01_hall.tmx",
+        "kings_and_pigs/data/maps/00_intro.tmx"
+    ],
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.transparentColor": "#000000",
+    "tileset.useTransparentColor": true
+}

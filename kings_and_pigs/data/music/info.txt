@@ -1,0 +1,19 @@
+Archive created by -=MIRSOFT=-
+Look for game MIDs at http://go.to/gamemids
+
+*** Archive info ***
+Archiver: Pyramid Head
+Type: Game rip
+Format: MID
+Original Composer: Kiril Petrushev, Dimitar Sabev
+Sequencer: Kiril Petrushev, Dimitar Sabev
+Num of tunes: 14
+Complete:
+
+*** Game info ***
+Name: Tzar: The Burden Of The Crown
+Platform: PC Windows
+Year: 2000
+Genre: RTS
+Publisher: Talonsoft
+Developer: Haemimont Games

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="14" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="16">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="248" source="decorations.tsx"/>
+ <layer id="1" name="background" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJzTZGBg0GQgHWgi6WsH4g4CuBOLGbOAeDYa7gXidUDcB+XPQVIPs2chFn0wdWuh+tcj6YOJ9eHRhw/A9CNjmPmaODAhgK4eAPbuHVw=
+  </data>
+ </layer>
+ <layer id="2" name="walls" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYIAAaSC2IRLLMCCAFgPxQAPJHlsS9RFjjySZ+rKAWAwJ6wOxHpQtTsBduABMPzasj0U9AO63BnI=
+  </data>
+ </layer>
+ <layer id="3" name="floors" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBicgJGRgYGZEb8aDqA8F5IaSTLtyQLSYkhYH4j1oGxxPPrwAZh+bFgfi3oA22ICTw==
+  </data>
+ </layer>
+ <layer id="4" name="decorations" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAcCDIyMAgxElCERV4CKCZJQB8fIXOHCQAAc74AaQ==
+  </data>
+ </layer>
+ <objectgroup id="5" name="spawn">
+  <object id="1" name="spawn" x="330.58" y="79.4329" width="78" height="58"/>
+ </objectgroup>
+ <objectgroup id="6" name="boxes">
+  <object id="4" x="392.643" y="111.219" width="22" height="16"/>
+  <object id="5" x="392.643" y="93.6203" width="22" height="16"/>
+  <object id="6" x="264.34" y="175.371" width="22" height="16"/>
+  <object id="7" x="33.2815" y="143.579" width="22" height="16"/>
+  <object id="8" x="190.538" y="78.8598" width="22" height="16"/>
+ </objectgroup>
+ <objectgroup id="7" name="bombs">
+  <object id="9" x="164.183" y="49.2088" width="52" height="56"/>
+  <object id="10" x="18.8492" y="103.709" width="52" height="56"/>
+ </objectgroup>
+ <objectgroup id="8" name="doors">
+  <object id="14" type="15_climb_upper" x="330" y="72" width="46" height="56"/>
+  <object id="15" type="17_dinner_room" x="40" y="104" width="46" height="56"/>
+ </objectgroup>
+ <objectgroup id="10" name="invisible_doors"/>
+ <objectgroup id="9" name="enemies">
+  <object id="11" type="pig with box" x="128.303" y="160.095">
+   <point/>
+  </object>
+  <object id="12" type="pig with bomb" x="174.287" y="64.1514">
+   <point/>
+  </object>
+  <object id="13" type="patrol pig" x="331.543" y="32.3596">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="14" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="11">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="248" source="decorations.tsx"/>
+ <layer id="1" name="background" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAEmljEsIF2IO4A4k40fTBxZNyJpG8tEK8D4lNo5s0C4l6oXB8QzwbiOVjsfQTEV4D4ONTshUjqYGavh/LR7YbZMxuP+QxQM25C7YHhW1BxZPM10TCxAF0fAILbHNM=
+  </data>
+ </layer>
+ <layer id="2" name="walls" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJyTZmBgsEHCMgwQII0mjq5GiwEVaEBpdHF0Nejy1lAzbQnoSwfiJCCOw6NOEoebQKAAqj8Zi74sIBZDwvp47MBlPgyIEYGxmQ8A8w0Iyg==
+  </data>
+ </layer>
+ <layer id="3" name="floors" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgaIB2Ik4A4Do8aSTxyBVD9yWjijIwMDFlAWgwJ6+MwA6SWmRHBxgbEiMDYzAcAYHYEUA==
+  </data>
+ </layer>
+ <layer id="4" name="decorations0" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYKACYETl8gP5AoyYNDpgRxMTA/LFGTFpdMAHE2PEtJsYANLPR4Y+WgIAIsABKQ==
+  </data>
+ </layer>
+ <layer id="11" name="decorations1" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYKANEGRkYBBiRNDEAgmgWklGBD1SAAC4CACx
+  </data>
+ </layer>
+ <objectgroup id="5" name="spawn">
+  <object id="10" name="spawn" x="1.30751" y="143.017" width="78" height="58"/>
+ </objectgroup>
+ <objectgroup id="6" name="boxes">
+  <object id="1" x="264.908" y="175.371" width="22" height="16"/>
+  <object id="2" x="264.34" y="143.011" width="22" height="16"/>
+  <object id="3" x="264.908" y="111.219" width="22" height="16"/>
+  <object id="4" x="320.543" y="111.219" width="22" height="16"/>
+  <object id="5" x="320.543" y="93.6203" width="22" height="16"/>
+  <object id="6" x="344.387" y="111.219" width="22" height="16"/>
+ </objectgroup>
+ <objectgroup id="7" name="bombs"/>
+ <objectgroup id="8" name="doors">
+  <object id="8" type="24_attic" x="40" y="40" width="46" height="56"/>
+ </objectgroup>
+ <objectgroup id="10" name="invisible_doors">
+  <object id="7" type="20_garden" x="5" y="160" width="1" height="32"/>
+ </objectgroup>
+ <objectgroup id="9" name="enemies">
+  <object id="9" type="pig king" x="366.742" y="95.3755">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

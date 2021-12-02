@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="14" height="28" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="8">
+ <tileset firstgid="1" source="outdoor.tsx"/>
+ <tileset firstgid="181" source="terrain.tsx"/>
+ <tileset firstgid="428" source="decorations.tsx"/>
+ <layer id="1" name="background0" width="14" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztkbENgCAQRbm51CWoqXQUG2ysTNzJGWQXj4RCTv5BqP3JSyD3Xy4EY3BCAmWknIm+naEwmylnec1WPntmL8xQonOCXgDEWKr3NK/V+b1+T4tV/twT5hD3jbnZcZV9MVfCCWrvlP0WDzmapznIqzklr8WRXqvjOh3X6fxgHheDtjc=
+  </data>
+ </layer>
+ <layer id="11" name="background1" width="14" height="28">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2B4AT8y9SVS1RUI4EeG2cNRjxcajqeBPZpk6BkFuAEA7qYHKQ==
+  </data>
+ </layer>
+ <layer id="2" name="walls" width="14" height="28">
+  <data encoding="base64" compression="zlib">
+   eJz7wMDA8AELvsCAAOexyNkwMmAFd5DUf8Qil4RDHzcjpnpkfadwYHkk806iyT3GYR4I3EPSg08dLn13SNAzqo98fdjSJnLaes+AO92SAvygNK50BsOeQOwFxN5Q9dEk2hM7qg+vvlwg9iVSjw8Q5yPxibETpCcRTQykTw2I8/BgdD2gdBBPpDth6r2Q9HgRiUmxgxYAANCjS3E=
+  </data>
+ </layer>
+ <layer id="3" name="floors" width="14" height="28">
+  <data encoding="base64" compression="zlib">
+   eJxjYBga4BQOLM+IUHMSTe4xATN3MEL0EFKHTR85YFTf4NeHK53BsCcQewGxN43sH9U3+PWBACgdxJOo3gtJjxeRmBQ7aAEALDQkWQ==
+  </data>
+ </layer>
+ <layer id="4" name="decorations" width="14" height="28">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAfbGHEz8cFTjLi54+CUTAKhgZIHmgHUAiCydATgEO8BId4EBl2DBYAADQpBMs=
+  </data>
+ </layer>
+ <objectgroup id="5" name="spawn">
+  <object id="7" name="spawn" x="7.851" y="753.642" width="78" height="58"/>
+ </objectgroup>
+ <objectgroup id="6" name="boxes">
+  <object id="5" x="167.187" y="78.7896" width="22" height="16"/>
+  <object id="6" x="166.419" y="61.1244" width="22" height="16"/>
+ </objectgroup>
+ <objectgroup id="7" name="bombs"/>
+ <objectgroup id="8" name="doors">
+  <object id="3" type="15_climb_upper" x="346" y="40" width="46" height="56"/>
+ </objectgroup>
+ <objectgroup id="10" name="invisible_doors">
+  <object id="1" type="12_secret_underpass_2" x="5" y="768" width="1" height="32"/>
+  <object id="2" type="11_secret_pass_2" x="5" y="416" width="1" height="32"/>
+ </objectgroup>
+ <objectgroup id="9" name="enemies">
+  <object id="4" type="patrol pig" x="126.728" y="63.7481">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

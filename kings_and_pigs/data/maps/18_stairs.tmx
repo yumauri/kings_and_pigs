@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="14" height="9" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="5">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="248" source="decorations.tsx"/>
+ <layer id="1" name="background" width="14" height="9">
+  <data encoding="base64" compression="zlib">
+   eJzTZGBg0CQCowNS1LcDcScBfejqjwHxLSBej0MfIfXo7qS1emR9pKhH1reWBPXkxgsMAwDTkxo3
+  </data>
+ </layer>
+ <layer id="2" name="walls" width="14" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAOSAOxDRTLkKDeFklMg0T1+PThUy8KxGJArE9H9TCgRaJ6bPqIUQ8DelC1xKqHAQDVTgaD
+  </data>
+ </layer>
+ <layer id="3" name="floors" width="14" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg+gIURQosCsRgQ6w8x9TBAino9qFpSzAcBAH4HAmA=
+  </data>
+ </layer>
+ <layer id="4" name="decorations" width="14" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBikgJE89aLE6oOq4yNRPdHmM5BoPp0BAEhgAE8=
+  </data>
+ </layer>
+ <objectgroup id="5" name="spawn"/>
+ <objectgroup id="6" name="boxes">
+  <object id="3" x="163.855" y="143.011" width="22" height="16"/>
+  <object id="4" x="328.491" y="111.219" width="22" height="16"/>
+ </objectgroup>
+ <objectgroup id="7" name="bombs"/>
+ <objectgroup id="8" name="doors">
+  <object id="1" type="17_dinner_room" x="40" y="200" width="46" height="56"/>
+  <object id="2" type="19_dance_hall" x="362" y="40" width="46" height="56"/>
+ </objectgroup>
+ <objectgroup id="10" name="invisible_doors"/>
+ <objectgroup id="9" name="enemies"/>
+</map>

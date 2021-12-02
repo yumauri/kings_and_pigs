@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="14" height="28" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="5">
+ <tileset firstgid="1" source="outdoor.tsx"/>
+ <tileset firstgid="181" source="terrain.tsx"/>
+ <tileset firstgid="428" source="decorations.tsx"/>
+ <layer id="1" name="background0" width="14" height="28">
+  <data encoding="base64" compression="zlib">
+   eJyLYWBgiCEB34XiQixYhAx9ImToEyFDnwgZ+tD1EKMPm55RfdjV4dLHgKSPlLSJDEjR187IwNABxaTog+FTZOgh1W8gfIeIsMOG36PpA+EWJEyMWaTG+0DrIzVsydUXB8ReDBBATtrBBsgxh1YYALaGhLw=
+  </data>
+ </layer>
+ <layer id="11" name="background1" width="14" height="28">
+  <data encoding="base64" compression="zlib">
+   eJxbxcDAsAoLHgWjYBQQD0pIVO8HxIlAzEyivkQ8csUkmKMFpTVJtH8U4AZahJUMOQAANUIGdA==
+  </data>
+ </layer>
+ <layer id="12" name="background2" width="14" height="28">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAEwljECAHNUT2jgAigBsUiRKoHqbNB4lsTqdcGixg56RpmJ62AFhX1jqbZUUBtAAA/XQLn
+  </data>
+ </layer>
+ <layer id="2" name="walls" width="14" height="28">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAORLGI3cGhdlTfqL7BoO89EH+AYlL0EQOw6TsJxKeA2A+Pvjgg9gJibyQxYvznA8R5QJyIJIbPHhjA5s7oEajPBoitgVgNitWJ1OdPhBtyGSBxk4ckxkSEPmwAlj6QMXJa8USTwwVA6cUGiZ8AxL5E2B+LRQw5XADBDh1o
+  </data>
+ </layer>
+ <layer id="3" name="floors" width="14" height="28">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUEAv2MDIw7IXik0D+KSD2w6M+Doi9gNibLq4bBUMNwNIHMkZOK55ocvQGACTlCAY=
+  </data>
+ </layer>
+ <layer id="4" name="decorations" width="14" height="28">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUEAMCBtoBo2DQgyQgDiKgJpgeDqESAAC7KwFY
+  </data>
+ </layer>
+ <objectgroup id="5" name="spawn">
+  <object id="4" name="spawn" x="261" y="3" width="78" height="58"/>
+ </objectgroup>
+ <objectgroup id="6" name="boxes"/>
+ <objectgroup id="7" name="bombs"/>
+ <objectgroup id="8" name="doors"/>
+ <objectgroup id="10" name="invisible_doors">
+  <object id="1" type="03_dungeon" x="224" y="5" width="128" height="1"/>
+  <object id="2" type="09_secret_pass" x="440" y="416" width="1" height="32"/>
+  <object id="3" type="10_secret_underpass" x="440" y="768" width="1" height="32"/>
+ </objectgroup>
+ <objectgroup id="9" name="enemies"/>
+</map>

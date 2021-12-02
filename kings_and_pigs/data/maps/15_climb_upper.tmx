@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="14" height="14" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="8">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="248" source="decorations.tsx"/>
+ <layer id="1" name="background" width="14" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzTZGBg0CSAsQFi1bUDcQcQd+LQBwPngfgKEr4FxOuAeD0Wfch6HuOwF92duPQQ42di9cD0wfx8l4Cb0PWtZYD4+SYDalhcwKMXH3hEQC8+f1NTLzH6kfUeZ8CdXvDpBYUftvRCStoGAO7yKqs=
+  </data>
+ </layer>
+ <layer id="2" name="walls" width="14" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAMpIHYBgnLEKnOFk1eA4cedHXoAF0fuh5RIBbDgvUJ6EGWx+YudD8Q0gMCWmj8RCDOYCAcduj60IE1Dr16DNj9Lk6EXmxAj8p68fkZn14QwJZeiNFLrD6YXuT0AgCVsgsH
+  </data>
+ </layer>
+ <layer id="3" name="floors" width="14" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBj6QBSIxbBgfQJ68MlTS08iEGeQqIeFkXi1egzY/S5Oop3I5o00vcjpBQCTkgRZ
+  </data>
+ </layer>
+ <layer id="4" name="decorations" width="14" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUwAAAAxAAAQ==
+  </data>
+ </layer>
+ <objectgroup id="5" name="spawn">
+  <object id="3" name="spawn" x="347.157" y="366.628" width="78" height="58"/>
+ </objectgroup>
+ <objectgroup id="6" name="boxes">
+  <object id="4" x="31.9872" y="238.995" width="22" height="16"/>
+  <object id="5" x="32.7158" y="221.508" width="22" height="16"/>
+  <object id="6" x="33.4444" y="203.293" width="22" height="16"/>
+ </objectgroup>
+ <objectgroup id="7" name="bombs"/>
+ <objectgroup id="8" name="doors">
+  <object id="1" type="13_climb" x="360" y="360" width="46" height="56"/>
+  <object id="2" type="16_respect" x="345" y="40" width="46" height="56"/>
+ </objectgroup>
+ <objectgroup id="10" name="invisible_doors"/>
+ <objectgroup id="9" name="enemies">
+  <object id="7" type="pig facing right" x="64.1166" y="222.222">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

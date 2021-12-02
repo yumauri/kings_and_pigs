@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="28" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="87">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="248" source="decorations.tsx"/>
+ <tileset firstgid="290" source="outdoor.tsx"/>
+ <layer id="1" name="background" width="28" height="7">
+  <data encoding="base64" compression="zlib">
+   eJzTZGBg0BxhmAGNxiZHSB6bHC670AE+OULyxNjXDsQdQNyJxTyYHCF5dLmBjCt6AgCA/Boj
+  </data>
+ </layer>
+ <layer id="2" name="walls" width="28" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh5QBKNxiZHSB6bHDYQC8R5QJwEpeNwyBGSR5fDBezx8NHlCMljU09vIEZnDAAKqwrG
+  </data>
+ </layer>
+ <layer id="3" name="floors" width="28" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh5QBKNxiZHSB6bHDYQC8R5QJwEpeNwyBGSR5cjBTAzki9PSC8HUJ4TCXMBMQsjdjlC8shyMCBGZwwA6fcKBw==
+  </data>
+ </layer>
+ <layer id="4" name="decorations" width="28" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh40MpInhwx8qNgFJACANUCAZM=
+  </data>
+ </layer>
+ <objectgroup id="5" name="spawn">
+  <object id="40" name="spawn" x="813.927" y="142.443" width="78" height="58"/>
+ </objectgroup>
+ <objectgroup id="6" name="boxes">
+  <object id="1" x="672.321" y="79.5582" width="22" height="16"/>
+  <object id="2" x="416.994" y="79.5582" width="22" height="16"/>
+  <object id="3" x="192.894" y="79.5582" width="22" height="16"/>
+ </objectgroup>
+ <objectgroup id="7" name="bombs"/>
+ <objectgroup id="8" name="doors"/>
+ <objectgroup id="10" name="invisible_doors">
+  <object id="4" type="20_garden" x="890" y="160" width="1" height="32"/>
+  <object id="5" type="22_wall" x="5" y="160" width="1" height="32"/>
+ </objectgroup>
+ <objectgroup id="9" name="enemies">
+  <object id="37" x="195.322" y="65.5156">
+   <point/>
+  </object>
+  <object id="38" x="437.179" y="64.9033">
+   <point/>
+  </object>
+  <object id="39" x="676.586" y="66.1278">
+   <point/>
+  </object>
+  <object id="57" x="644.747" y="130.419">
+   <point/>
+  </object>
+  <object id="58" x="649.033" y="129.807">
+   <point/>
+  </object>
+  <object id="59" x="655.156" y="128.582">
+   <point/>
+  </object>
+  <object id="60" x="659.442" y="129.194">
+   <point/>
+  </object>
+  <object id="61" x="662.503" y="129.194">
+   <point/>
+  </object>
+  <object id="62" x="667.401" y="129.194">
+   <point/>
+  </object>
+  <object id="63" x="672.3" y="129.194">
+   <point/>
+  </object>
+  <object id="64" x="679.647" y="129.194">
+   <point/>
+  </object>
+  <object id="65" x="684.546" y="129.194">
+   <point/>
+  </object>
+  <object id="66" x="687.607" y="129.194">
+   <point/>
+  </object>
+  <object id="67" x="391.869" y="130.419">
+   <point/>
+  </object>
+  <object id="68" x="395.542" y="130.419">
+   <point/>
+  </object>
+  <object id="69" x="398.604" y="129.807">
+   <point/>
+  </object>
+  <object id="70" x="405.952" y="129.807">
+   <point/>
+  </object>
+  <object id="71" x="409.013" y="129.807">
+   <point/>
+  </object>
+  <object id="72" x="416.361" y="129.807">
+   <point/>
+  </object>
+  <object id="73" x="423.096" y="129.194">
+   <point/>
+  </object>
+  <object id="74" x="426.77" y="129.194">
+   <point/>
+  </object>
+  <object id="75" x="430.443" y="129.194">
+   <point/>
+  </object>
+  <object id="76" x="433.505" y="129.807">
+   <point/>
+  </object>
+  <object id="77" x="164.095" y="130.419">
+   <point/>
+  </object>
+  <object id="78" x="169.606" y="130.419">
+   <point/>
+  </object>
+  <object id="79" x="173.892" y="129.807">
+   <point/>
+  </object>
+  <object id="80" x="178.79" y="129.807">
+   <point/>
+  </object>
+  <object id="81" x="181.852" y="129.807">
+   <point/>
+  </object>
+  <object id="82" x="187.362" y="129.194">
+   <point/>
+  </object>
+  <object id="83" x="190.424" y="129.194">
+   <point/>
+  </object>
+  <object id="84" x="193.485" y="129.194">
+   <point/>
+  </object>
+  <object id="85" x="197.159" y="129.194">
+   <point/>
+  </object>
+  <object id="86" x="200.22" y="129.194">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

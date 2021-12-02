@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="28" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="18">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="248" source="outdoor.tsx"/>
+ <tileset firstgid="428" source="decorations.tsx"/>
+ <layer id="3" name="background0" width="28" height="7">
+  <data encoding="base64" compression="zlib">
+   eJzTZGBg0ByiuB2IO3DgThrYNwuIZ+PAc6hsF8gPC9Hs6AXidVC8nsr2EWtHMCMEU2ofsf6oZkTFtE5TAPgrMBg=
+  </data>
+ </layer>
+ <layer id="7" name="background1" width="28" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjeQJCRgUGdkb720dvOgQY6QL+yQrEumr/VKAyLWjL1zmXExMQAAFVpBNE=
+  </data>
+ </layer>
+ <layer id="4" name="walls" width="28" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOCAdiGwJYhkp2gYAOEWo0gNiJkTr22RNpXwiV7CMGgOwLBdrnyEg9f6IDUSAWg2J9JHGYvbS0Ax04QO0kBqOHRyIQJ4HcTcAOAIhpCoE=
+  </data>
+ </layer>
+ <layer id="5" name="floors" width="28" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjewIlxYO3XA9pvQIYb9gD17AXifQT0hgLlHRlp488dQDNFgbQYFGOzl9p26ONR6wC1kxgMCg9YGIJwIlB/EsjdBOwAACXjDQw=
+  </data>
+ </layer>
+ <layer id="6" name="decorations0" width="28" height="7">
+  <data encoding="base64" compression="zlib">
+   eJybyMhAV7CYivYdBpp1BIi3IGFCIBuqJgdI50LZeUA6nwi9p4BqTgPxbiSMC3ihydUB+fVQsQYg3UhCOBxiRGBiwQSg2olQ9ZOA9GQqhXskmjluUP4iRkTcLgHSS9HURdM5nZELAMENFT8=
+  </data>
+ </layer>
+ <layer id="8" name="decorations1" width="28" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4By4M6IX96TgPxgAQBr3gCT
+  </data>
+ </layer>
+ <objectgroup id="9" name="spawn">
+  <object id="1" name="spawn" x="26.1752" y="79.6254" width="78" height="58"/>
+ </objectgroup>
+ <objectgroup id="10" name="boxes">
+  <object id="2" x="166.525" y="78.9003" width="22" height="16"/>
+  <object id="3" x="744.412" y="142.834" width="22" height="16"/>
+  <object id="4" x="648.201" y="174.491" width="22" height="16"/>
+  <object id="5" x="609.716" y="78.2796" width="22" height="16"/>
+  <object id="7" x="841.244" y="93.7975" width="22" height="16"/>
+  <object id="8" x="841.244" y="111.178" width="22" height="16"/>
+  <object id="9" x="841.244" y="76.4174" width="22" height="16"/>
+ </objectgroup>
+ <objectgroup id="13" name="bombs">
+  <object id="15" x="613.959" y="147.042" width="52" height="56"/>
+ </objectgroup>
+ <objectgroup id="11" name="doors">
+  <object id="6" type="01_hall" x="792" y="72" width="46" height="56"/>
+ </objectgroup>
+ <objectgroup id="14" name="invisible_doors"/>
+ <objectgroup id="12" name="enemies">
+  <object id="11" type="patrol pig facing right" x="639.338" y="63.9338">
+   <point/>
+  </object>
+  <object id="12" type="pig" x="590.301" y="160.144">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="14" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="4">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="248" source="decorations.tsx"/>
+ <layer id="1" name="background" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJzTZGBg0Bxg3A7EHVDcSYK+WUA8G4rnkKBvLRCvg+L1g8D/IAwAJtAVCw==
+  </data>
+ </layer>
+ <layer id="2" name="walls" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOkAZiGzQsQ4Q+LSxiGoNQnx4Qi6FhfSL0EQsAYhoC0w==
+  </data>
+ </layer>
+ <layer id="3" name="floors" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjagJGRgYGZkTQ9LIzY2fiAHhCLoWF90qzFCwBIdADG
+  </data>
+ </layer>
+ <layer id="4" name="decorations" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgEgBEHmwDgY8TOHooAABq0ACE=
+  </data>
+ </layer>
+ <objectgroup id="5" name="doors">
+  <object id="1" x="201" y="104" width="46" height="56"/>
+ </objectgroup>
+ <objectgroup id="6" name="boxes">
+  <object id="2" x="199.872" y="78.4812" width="22" height="16"/>
+  <object id="3" x="224.158" y="78.4812" width="22" height="16"/>
+ </objectgroup>
+</map>

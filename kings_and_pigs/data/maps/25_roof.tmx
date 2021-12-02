@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="14" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="31">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="248" source="decorations.tsx"/>
+ <tileset firstgid="290" source="outdoor.tsx"/>
+ <layer id="1" name="background" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJzTZGBg0CQCg8AsIO4F4nVEql0AxB1AvBCI50DFiVE7Gwmj6wOBOzjU4tN3nIB6bPpAYC3Uv4TwejR9pAIAkp4ikQ==
+  </data>
+ </layer>
+ <layer id="4" name="walls" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAfEMUilkqEPg0S1WPTRwqA6ZMkU18WEIuRgPWBGABriwMk
+  </data>
+ </layer>
+ <layer id="5" name="floors" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhYkEpj9dgANyN+PgxIYhHjAKrlBGIuHHpAIAuIxUjA+kAMABEqAqU=
+  </data>
+ </layer>
+ <layer id="2" name="decorations" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYMANWhkR7FQ86vCqZURXiakem1p2HPoIqeXDoq+VBLW4AClqyQEAfjwDKw==
+  </data>
+ </layer>
+ <objectgroup id="7" name="boxes">
+  <object id="24" x="64.7705" y="174.803" width="22" height="16"/>
+  <object id="25" x="164.385" y="110.69" width="22" height="16"/>
+  <object id="26" x="292.612" y="110.69" width="22" height="16"/>
+  <object id="27" x="198.296" y="143.011" width="22" height="16"/>
+  <object id="28" x="393.286" y="175.863" width="22" height="16"/>
+ </objectgroup>
+ <objectgroup id="9" name="doors">
+  <object id="23" type="24_attic" x="350" y="136" width="46" height="56"/>
+ </objectgroup>
+ <objectgroup id="8" name="bombs">
+  <object id="29" x="70.9651" y="144.736" width="52" height="56"/>
+  <object id="30" x="378.816" y="133.609" width="52" height="56"/>
+ </objectgroup>
+</map>
