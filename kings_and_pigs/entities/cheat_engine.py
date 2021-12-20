@@ -11,14 +11,23 @@ class Cheat:
         self.code = code
         self.enabled = False
 
+    def pick(self):
+        if self.enabled:
+            self.enabled = False
+            return True
+        return False
+
 
 class CheatEngine:
     def __init__(self, width, height):
         self.locked = False
         self.code = ""
         self.codes = [
-            Cheat("debug", "iddebug"),
-            Cheat("god_mode", "iddqd"),
+            Cheat("debug", "kpdebug"),
+            Cheat("god_mode", "kpgod"),
+            Cheat("full_health", "kpheal"),
+            Cheat("full_score", "kprich"),
+            Cheat("suicide", "kpdie"),
         ]
         self.timeout = pygame.time.get_ticks()
         self.layer = pygame.Surface([width, height], pygame.SRCALPHA, 32)
@@ -66,7 +75,7 @@ class CheatEngine:
 
     def draw(self):
         self.layer.fill((0, 0, 0, 0))
-        if self.debug:
+        if self.debug.enabled:
             y = 0
             for cheat in self.codes:
                 if cheat.enabled:
@@ -91,5 +100,5 @@ class CheatEngine:
     def __getattr__(self, key):
         for cheat in self.codes:
             if cheat.name == key:
-                return cheat.enabled
-        return False
+                return cheat
+        return None

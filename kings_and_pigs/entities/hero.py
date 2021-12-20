@@ -92,7 +92,7 @@ class Hero(Creature):
             play("attack")
 
     def hit(self, direction, chamber):
-        if self.cheats.god_mode:
+        if self.cheats.god_mode.enabled:
             return
 
         was_hit = super().hit(direction, chamber)
@@ -219,6 +219,12 @@ class Hero(Creature):
     def update(self, chamber, *args):
         super().update(chamber, self)
         if self.lives > 0:
+            if self.cheats.full_health.pick():
+                self.lives = 3
+            if self.cheats.full_score.pick():
+                self.score = self.max_score
+            if self.cheats.suicide.pick():
+                self.die()
             self.process_appliable(chamber.active_sprites)
             self.check_go_in_invisible_doors(chamber.invisible_doors)
             if not self.gone_through_invisible_door:
