@@ -16,7 +16,7 @@ load_image = loader("kings_and_pigs/data/sprites/01-King Human")
 
 
 class Hero(Creature):
-    def __init__(self):
+    def __init__(self, cheats):
         attack = load_image("Attack (78x58).png")
         dead = load_image("Dead (78x58).png")
         door_in = load_image("Door In (78x58).png")
@@ -66,6 +66,8 @@ class Hero(Creature):
         self.max_lives = 3
         self.max_invincibility = GAME_FPS
 
+        self.cheats = cheats
+
     def get_hit_area(self):
         area = self.get_hit_box()
         area.left += 22 if self.facing_right else -37
@@ -90,6 +92,9 @@ class Hero(Creature):
             play("attack")
 
     def hit(self, direction, chamber):
+        if self.cheats.god_mode:
+            return
+
         was_hit = super().hit(direction, chamber)
         if was_hit:
             play("damaged")

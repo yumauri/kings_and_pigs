@@ -4,7 +4,7 @@ from .agent import Agent
 
 
 class AI:
-    def __init__(self, width, height, chamber, hero):
+    def __init__(self, width, height, chamber, hero, cheats):
         self.view_width = width
         self.view_height = height
         self.agents = []
@@ -12,10 +12,11 @@ class AI:
         self.hero = hero
         self.layer = pygame.Surface([width, height], pygame.SRCALPHA, 32)
         self.debug = not True
+        self.cheats = cheats
 
     def process_event(self, event):
         if event.type == pygame.KEYDOWN:
-            if event.key in DEBUG_AI:
+            if event.key in DEBUG_AI and not self.cheats.locked:
                 self.debug = not self.debug
 
     def update_agents(self, offset_x, offset_y):
