@@ -1,6 +1,6 @@
 import pygame
 from kings_and_pigs import GAME_FPS
-from ..events import GO_CHAMBER, DEAD
+from ..events import GO_CHAMBER, DEAD, WIN
 from ..functions import loader, play, event
 from .animation import Animation
 from .creature import Creature
@@ -92,6 +92,7 @@ class Hero(Creature):
             play("attack")
 
     def hit(self, direction, chamber):
+        # if cheats code for invincibility is active
         if self.cheats.god_mode.enabled:
             return
 
@@ -219,12 +220,20 @@ class Hero(Creature):
     def update(self, chamber, *args):
         super().update(chamber, self)
         if self.lives > 0:
+
+            # process cheats
             if self.cheats.full_health.pick():
+                play("healed")
                 self.lives = 3
             if self.cheats.full_score.pick():
+                play("diamond")
                 self.score = self.max_score
             if self.cheats.suicide.pick():
+                play("damaged")
                 self.die()
+            if self.cheats.win.pick():
+                event(WIN)
+
             self.process_appliable(chamber.active_sprites)
             self.check_go_in_invisible_doors(chamber.invisible_doors)
             if not self.gone_through_invisible_door:

@@ -28,6 +28,8 @@ class CheatEngine:
             Cheat("full_health", "kpheal"),
             Cheat("full_score", "kprich"),
             Cheat("suicide", "kpdie"),
+            Cheat("win", "kpwin"),
+            Cheat("kill_all", "kpkillall")
         ]
         self.timeout = pygame.time.get_ticks()
         self.layer = pygame.Surface([width, height], pygame.SRCALPHA, 32)

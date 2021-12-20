@@ -68,6 +68,13 @@ class PigThrowingBomb(Enemy):
         pig.hit(direction, chamber)
         self.replace_with = [bomb, pig]
 
+    def murder(self):
+        bomb = Bomb(self.rect.x - 10, self.rect.y - 18)
+        pig = Pig(self.rect.x - 2, self.rect.y - 2, self.type, self.id)
+        pig.facing_right = self.facing_right
+        pig.murder()
+        self.replace_with = [bomb, pig]
+
     def pick(self):
         if self.in_action:
             return

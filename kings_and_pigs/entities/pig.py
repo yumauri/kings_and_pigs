@@ -67,6 +67,10 @@ class Pig(Enemy):
         if was_hit and self.lives > 0:
             play("damaged_pig")
 
+    def murder(self):
+        play("damaged_pig")
+        super().murder()
+
     def pick(self, targets):
         hit_box = self.get_hit_box()
         for target in targets:

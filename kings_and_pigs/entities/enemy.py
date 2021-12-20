@@ -7,3 +7,6 @@ class Enemy(Creature):
         super().__init__(x, y, animation_idle)
         self.type = "" if type is None else type
         self.id = uuid.uuid4() if id is None else id
+
+    def murder(self):
+        self.die()

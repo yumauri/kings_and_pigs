@@ -230,7 +230,11 @@ class Game:
             offset_x, offset_y = self.calculate_offset()
             self.ai.update(-offset_x, -offset_y)
 
+            # process cheats
             self.cheats.update()
+            if self.cheats.kill_all.pick():
+                for enemy in self.chamber.enemies:
+                    enemy.murder()
 
         elif self.stage == Game.GAME_OVER or self.stage == Game.VICTORY:
             self.outro_screen.update()
