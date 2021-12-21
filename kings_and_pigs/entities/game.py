@@ -159,6 +159,12 @@ class Game:
                 self.castle.use_door(event.door)
                 self.fade_step = 10
 
+            elif event.type == SET_CHAMBER and self.stage == Game.PLAYING:
+                chamber = self.castle.get_chamber(event.chamber)
+                if chamber:
+                    self.castle.use_magic(chamber)
+                    self.fade_step = 10
+
             elif event.type == PLAY_SOUND and self.stage == Game.PLAYING:
                 self.player.sound(event.sound)
 
@@ -216,7 +222,10 @@ class Game:
                     self.ai.chamber = self.chamber
                     self.last_camera_y = None
                     self.new_camera_y = None
-                    self.hero.go_out(door)
+                    if door:
+                        self.hero.go_out(door)
+                    else:
+                        self.hero.respawn(self.chamber)
             elif self.fade_step < 0 and self.fade == 0:
                 self.fade_step = 0
 

@@ -1,6 +1,6 @@
 import pygame
 from kings_and_pigs import GAME_FPS
-from ..events import GO_CHAMBER, DEAD, WIN
+from ..events import GO_CHAMBER, SET_CHAMBER, DEAD, WIN
 from ..functions import loader, play, event
 from .animation import Animation
 from .creature import Creature
@@ -233,6 +233,8 @@ class Hero(Creature):
                 self.die()
             if self.cheats.win.pick():
                 event(WIN)
+            if self.cheats.goto.pick():
+                event(SET_CHAMBER, chamber=self.cheats.goto.actual[-2:])
 
             self.process_appliable(chamber.active_sprites)
             self.check_go_in_invisible_doors(chamber.invisible_doors)

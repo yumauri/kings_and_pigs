@@ -1,3 +1,4 @@
+import re
 import pygame
 
 
@@ -5,11 +6,16 @@ class Cheat:
     name: str
     code: str
     enabled: bool
+    exact_pattern: re.Pattern[str]
+    pattern: re.Pattern[str]
+    actual: str
 
-    def __init__(self, name, code):
+    def __init__(self, name: str, code: str):
         self.name = name
         self.code = code
         self.enabled = False
+        self.exact_pattern = re.compile("^" + code.replace("#", "\\d") + "$")
+        self.pattern = re.compile("^" + code.replace("#", "\\d?") + "$")
 
     def pick(self):
         if self.enabled:
@@ -29,7 +35,8 @@ class CheatEngine:
             Cheat("full_score", "kprich"),
             Cheat("suicide", "kpdie"),
             Cheat("win", "kpwin"),
-            Cheat("kill_all", "kpkillall")
+            Cheat("kill_all", "kpkillall"),
+            Cheat("goto", "kpgoto##"),
         ]
         self.timeout = pygame.time.get_ticks()
         self.layer = pygame.Surface([width, height], pygame.SRCALPHA, 32)
@@ -56,11 +63,13 @@ class CheatEngine:
 
                 correct = False
                 for cheat in self.codes:
-                    if self.code == cheat.code:
+                    if self.code == cheat.code or cheat.exact_pattern.match(self.code):
                         correct = True
                         cheat.enabled = not cheat.enabled
+                        if cheat.enabled:
+                            cheat.actual = self.code
                         break
-                    elif cheat.code.startswith(self.code):
+                    elif cheat.code.startswith(self.code) or cheat.pattern.match(self.code):
                         correct = True
                         break
 
@@ -72,7 +81,7 @@ class CheatEngine:
     def update(self):
         now = pygame.time.get_ticks()
         if self.locked:
-            if now - self.timeout > 500:
+            if now - self.timeout > 1000:
                 self.reset()
 
     def draw(self):
