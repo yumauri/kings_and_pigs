@@ -65,6 +65,10 @@ class PigKing(Enemy):
         if was_hit and self.lives > 0:
             play("damaged_pig_king")
 
+    def murder(self):
+        play("damaged_pig_king")
+        super().murder()
+
     def die(self):
         super().die()
         event(WIN)

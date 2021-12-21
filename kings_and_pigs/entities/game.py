@@ -5,6 +5,7 @@ from ..events import *
 from ..ai import AI
 from ..player import Player
 from .volume_control import VolumeControl
+from .cheat_engine import CheatEngine
 from .splash import Splash
 from .game_over import GameOver
 from .victory import Victory
@@ -62,12 +63,13 @@ class Game:
         self.fade_step = -10
         self.stage = Game.PLAYING
         self.finish = False
-        self.hero = Hero()
+        self.cheats = CheatEngine(WIDTH, HEIGHT)
+        self.hero = Hero(self.cheats)
         self.stats = Stats(self.hero)
         self.castle = Castle()
         self.chamber = self.castle.chamber
         self.hero.respawn(self.chamber)
-        self.ai = AI(WIDTH, HEIGHT, self.chamber, self.hero)
+        self.ai = AI(WIDTH, HEIGHT, self.chamber, self.hero, self.cheats)
         self.last_camera_y = None
         self.new_camera_y = None
 
@@ -81,6 +83,9 @@ class Game:
 
     def process_events(self):
         for event in pygame.event.get():
+            if self.stage == Game.PLAYING:
+                self.cheats.process_event(event)
+
             if event.type == pygame.QUIT:
                 self.done = True
 
@@ -107,18 +112,18 @@ class Game:
                         self.hero.attack(self.chamber.active_sprites, self.chamber)
                     elif event.key in GO_IN:
                         self.hero.go_in(self.chamber.active_sprites)
-                    elif event.key in PAUSE:
+                    elif event.key in PAUSE and not self.cheats.locked:
                         self.stage = Game.PAUSED
                         self.player.pause()
-                    elif event.key in QUIT:
+                    elif event.key in QUIT and not self.cheats.locked:
                         self.stage = Game.QUIT
                         self.player.pause()
-                    elif event.key in RESTART:
+                    elif event.key in RESTART and not self.cheats.locked:
                         self.stage = Game.RESTART
                         self.player.pause()
-                    elif event.key in NEXT_TRACK:
+                    elif event.key in NEXT_TRACK and not self.cheats.locked:
                         self.player.play_next()
-                    elif event.key in ALL_MUTE:
+                    elif event.key in ALL_MUTE and not self.cheats.locked:
                         self.volume_control.mute()
 
                 elif self.stage == Game.PAUSED:
@@ -153,6 +158,12 @@ class Game:
             elif event.type == GO_CHAMBER and self.stage == Game.PLAYING:
                 self.castle.use_door(event.door)
                 self.fade_step = 10
+
+            elif event.type == SET_CHAMBER and self.stage == Game.PLAYING:
+                chamber = self.castle.get_chamber(event.chamber)
+                if chamber:
+                    self.castle.use_magic(chamber)
+                    self.fade_step = 10
 
             elif event.type == PLAY_SOUND and self.stage == Game.PLAYING:
                 self.player.sound(event.sound)
@@ -211,7 +222,10 @@ class Game:
                     self.ai.chamber = self.chamber
                     self.last_camera_y = None
                     self.new_camera_y = None
-                    self.hero.go_out(door)
+                    if door:
+                        self.hero.go_out(door)
+                    else:
+                        self.hero.respawn(self.chamber)
             elif self.fade_step < 0 and self.fade == 0:
                 self.fade_step = 0
 
@@ -224,6 +238,12 @@ class Game:
             # relative to chamber, not relative to view
             offset_x, offset_y = self.calculate_offset()
             self.ai.update(-offset_x, -offset_y)
+
+            # process cheats
+            self.cheats.update()
+            if self.cheats.kill_all.pick():
+                for enemy in self.chamber.enemies:
+                    enemy.murder()
 
         elif self.stage == Game.GAME_OVER or self.stage == Game.VICTORY:
             self.outro_screen.update()
@@ -339,6 +359,11 @@ class Game:
             # relative to chamber, not relative to view
             self.ai.draw(-offset_x, -offset_y)
             self.screen.blit(self.ai.layer, [0, 0])
+
+            # draw cheat engine layer
+
+            self.cheats.draw()
+            self.screen.blit(self.cheats.layer, [0, 0])
 
             # fade screen when changing chamber
             if self.fade > 0:

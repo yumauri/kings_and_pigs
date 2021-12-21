@@ -64,6 +64,16 @@ class Castle:
 
         self.prev_door = door
 
+    def use_magic(self, chamber):
+        self.next_chamber = chamber
+        self.prev_door = None
+        self.next_door = None
+
     def swap_chamber(self):
         self.chamber = self.next_chamber
         return self.next_door
+
+    def get_chamber(self, number: str):
+        for name, chamber in self.chambers.items():
+            if name.startswith(number):
+                return chamber

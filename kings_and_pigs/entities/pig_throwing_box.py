@@ -68,6 +68,13 @@ class PigThrowingBox(Enemy):
         pig.hit(direction, chamber)
         self.replace_with = [box, pig]
 
+    def murder(self):
+        box = Box(self.rect.x + 4, self.rect.y + 3)
+        pig = Pig(self.rect.x - 4, self.rect.y + 2, self.type, self.id)
+        pig.facing_right = self.facing_right
+        pig.murder()
+        self.replace_with = [box, pig]
+
     def pick(self):
         if self.in_action:
             return

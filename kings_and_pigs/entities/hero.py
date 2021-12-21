@@ -1,6 +1,6 @@
 import pygame
 from kings_and_pigs import GAME_FPS
-from ..events import GO_CHAMBER, DEAD
+from ..events import GO_CHAMBER, SET_CHAMBER, DEAD, WIN
 from ..functions import loader, play, event
 from .animation import Animation
 from .creature import Creature
@@ -16,7 +16,7 @@ load_image = loader("kings_and_pigs/data/sprites/01-King Human")
 
 
 class Hero(Creature):
-    def __init__(self):
+    def __init__(self, cheats):
         attack = load_image("Attack (78x58).png")
         dead = load_image("Dead (78x58).png")
         door_in = load_image("Door In (78x58).png")
@@ -66,6 +66,8 @@ class Hero(Creature):
         self.max_lives = 3
         self.max_invincibility = GAME_FPS
 
+        self.cheats = cheats
+
     def get_hit_area(self):
         area = self.get_hit_box()
         area.left += 22 if self.facing_right else -37
@@ -90,6 +92,10 @@ class Hero(Creature):
             play("attack")
 
     def hit(self, direction, chamber):
+        # if cheats code for invincibility is active
+        if self.cheats.god_mode.enabled:
+            return
+
         was_hit = super().hit(direction, chamber)
         if was_hit:
             play("damaged")
@@ -214,6 +220,22 @@ class Hero(Creature):
     def update(self, chamber, *args):
         super().update(chamber, self)
         if self.lives > 0:
+
+            # process cheats
+            if self.cheats.full_health.pick():
+                play("healed")
+                self.lives = 3
+            if self.cheats.full_score.pick():
+                play("diamond")
+                self.score = self.max_score
+            if self.cheats.suicide.pick():
+                play("damaged")
+                self.die()
+            if self.cheats.win.pick():
+                event(WIN)
+            if self.cheats.goto.pick():
+                event(SET_CHAMBER, chamber=self.cheats.goto.actual[-2:])
+
             self.process_appliable(chamber.active_sprites)
             self.check_go_in_invisible_doors(chamber.invisible_doors)
             if not self.gone_through_invisible_door:

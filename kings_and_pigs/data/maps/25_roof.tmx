@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="14" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="31">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="14" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="32">
  <tileset firstgid="1" source="terrain.tsx"/>
  <tileset firstgid="248" source="decorations.tsx"/>
  <tileset firstgid="290" source="outdoor.tsx"/>
@@ -23,6 +23,9 @@
    eJxjYMANWhkR7FQ86vCqZURXiakem1p2HPoIqeXDoq+VBLW4AClqyQEAfjwDKw==
   </data>
  </layer>
+ <objectgroup id="10" name="spawn">
+  <object id="31" name="spawn" x="332.206" y="140.991" width="78" height="58"/>
+ </objectgroup>
  <objectgroup id="7" name="boxes">
   <object id="24" x="64.7705" y="174.803" width="22" height="16"/>
   <object id="25" x="164.385" y="110.69" width="22" height="16"/>
