@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="14" height="28" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="8">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="14" height="28" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="10">
  <tileset firstgid="1" source="outdoor.tsx"/>
  <tileset firstgid="181" source="terrain.tsx"/>
  <tileset firstgid="428" source="decorations.tsx"/>
  <layer id="1" name="background0" width="14" height="28">
   <data encoding="base64" compression="zlib">
-   eJztkbENgCAQRbm51CWoqXQUG2ysTNzJGWQXj4RCTv5BqP3JSyD3Xy4EY3BCAmWknIm+naEwmylnec1WPntmL8xQonOCXgDEWKr3NK/V+b1+T4tV/twT5hD3jbnZcZV9MVfCCWrvlP0WDzmapznIqzklr8WRXqvjOh3X6fxgHheDtjc=
+   eJzt0T0KgDAMgNHmXOolOnfSo7jUxUnwTp7B3sUUOkja/NC5gQ+U5lFE5/hJpdbMULdAvTeRsxXqtp/b8TliZ+OMm2xuZi8x5fGg70nOaobrd9J44Z9H4LvI+4G9aIJyX56nFEjad9J9i+OM5CTDOc20nMVQZzWh04ROM+L7ALMGttc=
   </data>
  </layer>
  <layer id="11" name="background1" width="14" height="28">
@@ -15,7 +15,7 @@
  </layer>
  <layer id="2" name="walls" width="14" height="28">
   <data encoding="base64" compression="zlib">
-   eJz7wMDA8AELvsCAAOexyNkwMmAFd5DUf8Qil4RDHzcjpnpkfadwYHkk806iyT3GYR4I3EPSg08dLn13SNAzqo98fdjSJnLaes+AO92SAvygNK50BsOeQOwFxN5Q9dEk2hM7qg+vvlwg9iVSjw8Q5yPxibETpCcRTQykTw2I8/BgdD2gdBBPpDth6r2Q9HgRiUmxgxYAANCjS3E=
+   eJz7wMDA8AELvsCAAOfxyKGDO0jqP2KRwwW4GTHVI+s7hQPLMyLUnUSTe4zHvntIevCpw6UPn19G9VFPH7a0iZy23jMQnzbxAT8ojSudwbAnEHsBsTdUfTSJ9sSO6sOrLxeIfYnU4wPE+Uh8YuwE6UlEEwPpUwPiPDwYXQ8oHcQT6U6Yei8kPV5EYlLsoAUAADUgStE=
   </data>
  </layer>
  <layer id="3" name="floors" width="14" height="28">
@@ -38,13 +38,15 @@
  <objectgroup id="7" name="bombs"/>
  <objectgroup id="8" name="doors">
   <object id="3" type="15_climb_upper" x="346" y="40" width="46" height="56"/>
+  <object id="8" type="99_dead_end" x="90" y="40" width="46" height="56"/>
  </objectgroup>
  <objectgroup id="10" name="invisible_doors">
   <object id="1" type="12_secret_underpass_2" x="5" y="768" width="1" height="32"/>
   <object id="2" type="11_secret_pass_2" x="5" y="416" width="1" height="32"/>
+  <object id="9" type="xx_easter_egg" x="5" y="32" width="1" height="64"/>
  </objectgroup>
  <objectgroup id="9" name="enemies">
-  <object id="4" type="patrol pig" x="126.728" y="63.7481">
+  <object id="4" type="patrol pig" x="369.206" y="63.1581">
    <point/>
   </object>
  </objectgroup>

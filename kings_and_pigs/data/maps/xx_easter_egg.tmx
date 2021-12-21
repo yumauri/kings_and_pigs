@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="14" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="12">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="248" source="decorations.tsx"/>
+ <tileset firstgid="290" source="images.tsx"/>
+ <layer id="1" name="background" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAftANxB4kYBGYB8WwicC8Qr4NiUvTNQXMnqfo0ofRaJPvx4fVo+kgFIH0AxgEkJQ==
+  </data>
+ </layer>
+ <layer id="2" name="walls" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJyTZmBgsCEDazGQB+ilTxSIxcjQp0GmfTB9elB7icX6UH0Am7sFxA==
+  </data>
+ </layer>
+ <layer id="3" name="floors" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYBieQBSIxUjUw8hInl3I+vSg9hKL9aH6AEoGAX8=
+  </data>
+ </layer>
+ <layer id="4" name="decorations" width="14" height="7">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAQMBIphgbYsajBJkYtfXxY1GATGygAADLQAEE=
+  </data>
+ </layer>
+ <objectgroup id="12" name="images">
+  <object id="11" gid="290" x="107" y="182" width="105" height="140"/>
+ </objectgroup>
+ <objectgroup id="7" name="spawn"/>
+ <objectgroup id="5" name="doors"/>
+ <objectgroup id="8" name="invisible_doors">
+  <object id="5" type="13_climb" x="443" y="32" width="1" height="64"/>
+ </objectgroup>
+ <objectgroup id="6" name="boxes"/>
+</map>

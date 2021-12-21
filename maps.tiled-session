@@ -34,10 +34,10 @@
         },
         "kings_and_pigs/data/maps/00_intro.tmx": {
             "scale": 1.9553,
-            "selectedLayer": 0,
+            "selectedLayer": 11,
             "viewCenter": {
-                "x": 210.45363882780134,
-                "y": 109.44612079987725
+                "x": 680.4582417020406,
+                "y": 125.81189587275607
             }
         },
         "kings_and_pigs/data/maps/01_hall.tmx": {
@@ -153,11 +153,11 @@
             }
         },
         "kings_and_pigs/data/maps/13_climb.tmx": {
-            "scale": 0.5,
-            "selectedLayer": 8,
+            "scale": 1.695,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 223,
-                "y": 446
+                "x": 154.2772861356932,
+                "y": 219.46902654867256
             }
         },
         "kings_and_pigs/data/maps/14_armory.tmx": {
@@ -256,25 +256,49 @@
                 "y": 136.16652211621854
             }
         },
-        "kings_and_pigs/data/maps/99_dead_end.tmx": {
-            "scale": 1.6882291666666667,
-            "selectedLayer": 0,
+        "kings_and_pigs/data/maps/98_easter_egg.tmx": {
+            "scale": 1.2107,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 225.38409329302152,
-                "y": 197.8404393163448
+                "x": 234.98802345750389,
+                "y": 193.27661683323694
+            }
+        },
+        "kings_and_pigs/data/maps/99_dead_end.tmx": {
+            "scale": 1.2292,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 239.58672307191668,
+                "y": 211.51968760169217
             }
         },
         "kings_and_pigs/data/maps/decorations.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "kings_and_pigs/data/maps/images.tsx": {
+            "dynamicWrapping": true,
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "kings_and_pigs/data/maps/outdoor.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "kings_and_pigs/data/maps/terrain.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "kings_and_pigs/data/maps/xx_easter_egg.tmx": {
+            "scale": 1.2132291666666666,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 236.9708937923929,
+                "y": 125.28548123980423
+            }
         },
         "kings_and_pigs/data/maps/xx_template.tmx": {
             "scale": 1.7614583333333333,
@@ -286,7 +310,7 @@
         }
     },
     "last.externalTilesetPath": "/Users/vic/Dev/ya.liceum/projects/2 - PyGame - Kings and Pigs/kings_and_pigs/data/maps",
-    "last.imagePath": "/Users/vic/Dev/ya.liceum/projects/2 - PyGame - Kings and Pigs/kings_and_pigs/data/sprites/14-TileSets",
+    "last.imagePath": "/Users/vic/Dev/ya.liceum/projects/2 - PyGame - Kings and Pigs/kings_and_pigs/data/sprites",
     "map.height": 7,
     "map.lastUsedFormat": "tmx",
     "map.layerDataFormat": null,
@@ -295,21 +319,22 @@
     ],
     "project": "maps.tiled-project",
     "recentFiles": [
-        "kings_and_pigs/data/maps/19_dance_hall.tmx",
-        "kings_and_pigs/data/maps/18_stairs.tmx",
-        "kings_and_pigs/data/maps/17_dinner_room.tmx",
-        "kings_and_pigs/data/maps/16_respect.tmx",
-        "kings_and_pigs/data/maps/15_climb_upper.tmx",
-        "kings_and_pigs/data/maps/14_armory.tmx",
+        "kings_and_pigs/data/maps/99_dead_end.tmx",
         "kings_and_pigs/data/maps/13_climb.tmx",
-        "kings_and_pigs/data/maps/12_secret_underpass_2.tmx",
-        "kings_and_pigs/data/maps/11_secret_pass_2.tmx",
-        "kings_and_pigs/data/maps/10_secret_underpass.tmx",
-        "kings_and_pigs/data/maps/09_secret_pass.tmx",
-        "kings_and_pigs/data/maps/08_fall.tmx"
+        "kings_and_pigs/data/maps/images.tsx",
+        "kings_and_pigs/data/maps/xx_easter_egg.tmx",
+        "kings_and_pigs/data/maps/00_intro.tmx",
+        "kings_and_pigs/data/maps/14_armory.tmx",
+        "kings_and_pigs/data/maps/98_easter_egg.tmx",
+        "kings_and_pigs/data/maps/25_roof.tmx",
+        "kings_and_pigs/data/maps/24_attic.tmx",
+        "kings_and_pigs/data/maps/23_bedroom.tmx",
+        "kings_and_pigs/data/maps/22_wall.tmx",
+        "kings_and_pigs/data/maps/21_barracks.tmx"
     ],
     "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx",
     "tileset.transparentColor": "#000000",
+    "tileset.type": 1,
     "tileset.useTransparentColor": true
 }

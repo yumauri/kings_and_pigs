@@ -79,6 +79,7 @@ class Chamber:
         self.draw_layers("walls.*", self.walls_layer, self.walls)
         self.draw_layers("floors.*", self.floors_layer, self.floors)
         self.draw_layers("decorations.*", self.decorations_layer)
+        self.draw_images("images.*", self.background_layer)
 
         self.active_sprites.add(*self.doors, *self.boxes, *self.bombs, *self.enemies)
         self.inactive_sprites.add(*self.walls, *self.floors)
@@ -111,6 +112,17 @@ class Chamber:
                     layer.blit(image, (x * GRID_SIZE, y * GRID_SIZE))
                     if group is not None:
                         group.add(Block(x * GRID_SIZE, y * GRID_SIZE, image))
+                surface.blit(layer, (0, 0))
+
+    def draw_images(self, pattern, surface):
+        map_layers_names = sorted(self.map.layernames.keys())
+        for name in map_layers_names:
+            if re.match(pattern, name):
+                layer = pygame.Surface([self.width, self.height], pygame.SRCALPHA, 32)
+                map_layer = self.map.get_layer_by_name(name)
+                for obj in map_layer:
+                    image = pygame.transform.scale(obj.image, (int(obj.width), int(obj.height)))
+                    layer.blit(image, (obj.x, obj.y))
                 surface.blit(layer, (0, 0))
 
     def get_respawn_point(self):
