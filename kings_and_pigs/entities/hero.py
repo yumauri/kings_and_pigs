@@ -93,7 +93,8 @@ class Hero(Creature):
 
     def hit(self, direction, chamber):
         # if cheats code for invincibility is active
-        if self.cheats.god_mode.enabled:
+        # or in action (e.g. entering door)
+        if self.cheats.god_mode.enabled or self.in_action:
             return
 
         was_hit = super().hit(direction, chamber)
