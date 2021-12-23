@@ -81,7 +81,7 @@ class Creature(AnimatedEntity, Hittable):
         self.vx = 0
 
     def jump(self, floors):
-        if self.in_action:
+        if self.in_action or not self.on_ground:
             return
 
         # check if creature was just fall off the cliff
