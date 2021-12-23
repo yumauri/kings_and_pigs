@@ -35,7 +35,7 @@ class Creature(AnimatedEntity, Hittable):
             hit_box.left += self.adjust_direction  # hit box compensation
         return hit_box
 
-    def get_hit_area(self):
+    def get_hit_area(self, chamber=None):
         return self.get_hit_box()
 
     def step_left(self):
@@ -176,18 +176,19 @@ class Creature(AnimatedEntity, Hittable):
 
         event(SHAKE_WORLD)
 
-        kill_area = self.get_hit_area()
-        for target in targets:
-            if (
-                target is not self
-                and kill_area.colliderect(target.rect)
-                and isinstance(target, Hittable)
-            ):
-                if kill_area.colliderect(target.get_hit_box()):
-                    if self.facing_right:
-                        target.hit(target.HIT_FROM_BOTTOM_LEFT, chamber)
-                    else:
-                        target.hit(target.HIT_FROM_BOTTOM_RIGHT, chamber)
+        kill_area = self.get_hit_area(chamber)
+        if kill_area:
+            for target in targets:
+                if (
+                    target is not self
+                    and kill_area.colliderect(target.rect)
+                    and isinstance(target, Hittable)
+                ):
+                    if kill_area.colliderect(target.get_hit_box()):
+                        if self.facing_right:
+                            target.hit(target.HIT_FROM_BOTTOM_LEFT, chamber)
+                        else:
+                            target.hit(target.HIT_FROM_BOTTOM_RIGHT, chamber)
 
         # to indicate in child classes, if creature was attacked successfully
         return True

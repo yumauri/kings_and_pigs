@@ -42,7 +42,7 @@ class PigKing(Enemy):
         self.facing_right = False
         self.lives = 3
 
-    def get_hit_area(self):
+    def get_hit_area(self, chamber=None):
         area = self.get_hit_box()
         area.left += 10 if self.facing_right else -14
         area.top -= 12

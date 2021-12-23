@@ -36,7 +36,7 @@ class PigThrowingBox(Enemy):
         self.lives = 2
         self.can_throw = True
 
-    def get_hit_area(self):
+    def get_hit_area(self, chamber=None):
         area = self.get_hit_box()
         area.left += 10 if self.facing_right else -160
         area.top -= 15

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="21" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="14">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="21" height="7" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="14">
  <tileset firstgid="1" source="terrain.tsx"/>
  <tileset firstgid="248" source="decorations.tsx"/>
  <layer id="1" name="background" width="21" height="7">
   <data encoding="base64" compression="zlib">
-   eJxjYKAe0IRiEGgH4g4KcCcWM9cC8Too7gPi2STiOQTcvxZqbi+SHYTYk3G4VxPN3PUkstch8TUZsJtLCUA3kxoYAIhtKY8=
+   eJxjYKAe0IRiEGgH4g4KcCcWM9cC8Too7gPi2STiOQTcvxZqbi+SHYTYK3G4VxPN3PUkstch8TUZsJtLCUA3kxoYAJ91KaU=
   </data>
  </layer>
  <layer id="2" name="walls" width="21" height="7">

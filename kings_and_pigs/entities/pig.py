@@ -44,7 +44,7 @@ class Pig(Enemy):
         self.lives = 2
         self.can_pick = True
 
-    def get_hit_area(self):
+    def get_hit_area(self, chamber=None):
         area = self.get_hit_box()
         area.left += 10 if self.facing_right else -14
         area.top -= 12

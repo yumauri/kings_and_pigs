@@ -68,13 +68,38 @@ class Hero(Creature):
 
         self.cheats = cheats
 
-    def get_hit_area(self):
+    def get_hit_area(self, chamber=None):
         area = self.get_hit_box()
         area.left += 22 if self.facing_right else -37
         area.top -= 12
         area.width += 15
         area.height += 25
-        return area
+
+        # adjust hit area to be limited by walls
+
+        # shrink hit area, so it will not collide floor and ceiling
+        small_area = pygame.Rect(area.left, area.top + 20, area.width, area.height - 41)
+        # check overlaps of small area with walls
+        overlaps = False
+        leftest, rightest = float('inf'), -float('inf')
+        for wall in chamber.walls:
+            if small_area.colliderect(wall.rect):
+                overlaps = True
+                if self.facing_right:
+                    leftest = min(wall.rect.left, leftest)
+                else:
+                    rightest = max(wall.rect.right, rightest)
+        # shrink main hit area
+        if overlaps:
+            if self.facing_right:
+                overlap = area.right - leftest
+                area.width -= overlap
+            else:
+                overlap = rightest - area.left
+                area.width -= overlap
+                area.left += overlap
+
+        return area if area.width > 0 else None
 
     def jump(self, floors):
         was_jumped_successfully = super().jump(floors)
