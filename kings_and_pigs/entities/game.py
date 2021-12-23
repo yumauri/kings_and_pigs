@@ -201,7 +201,9 @@ class Game:
         pressed = pygame.key.get_pressed()
 
         if self.stage == Game.PLAYING:
-            if any(pressed[k] for k in LEFT):
+            if self.finish:
+                self.hero.stop()
+            elif any(pressed[k] for k in LEFT):
                 self.hero.move_left()
             elif any(pressed[k] for k in RIGHT):
                 self.hero.move_right()
