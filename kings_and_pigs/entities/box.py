@@ -14,7 +14,7 @@ from .diamond import Diamond
 # box sprites loader
 load_image = loader("kings_and_pigs/data/sprites/08-Box")
 
-BOX_DESTROY_FORCE = 9.5
+BOX_DESTROY_FORCE = 10.5
 BOX_PIECE_LIFETIME = 2000  # 2 seconds
 
 
