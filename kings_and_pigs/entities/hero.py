@@ -211,6 +211,8 @@ class Hero(Creature):
 
         def went_in():
             door.close()
+            if door.backdoor is not None:
+                door.backdoor.close()
             self.in_action = False
 
         self.rect.x = door.rect.centerx - hit_box.width / 2 - self.hit_box_d_left
